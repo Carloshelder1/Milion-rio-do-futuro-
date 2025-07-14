@@ -6,7 +6,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Algoritmo Milionário 2025</title>
     <style>
+        body <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Algoritmo Milionário 2025</title>
+    <style>
         body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #1a1a2e;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #f9a826;
+        }
+        
+        h2 {
+            color: #1a1a2e;
+            font-size: 2em;
+            margin-top: 40px;
+            border-bottom: 2px solid #f9a826;
+            padding-bottom: 10px;
+        }
+        
+        .attention-banner {
+            background-color: #e63946;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #f9a826;
+            color: #1a1a2e;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: #e63946;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        .benefit-card {
+            flex-basis: 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .testimonials {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+        
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #f9a826;
+            background: #f8f9fa;
+        }
+        
+        .offer-box {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #ccc;
+            font-size: 1.5em;
+        }
+        
+        .promo-price {
+            font-size: 2.5em;
+            color: #f9a826;
+            font-weight: bold;
+        }
+        
+        .timer {
+            font-size: 1.2em;
+            color: #e63946;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .bonus {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px dashed #f9a826;
+        }
+        
+        .guarantee {
+            text-align: center;
+            padding: 30px;
+            background: #f9a826;
+            color: #1a1a2e;
+            border-radius: 10px;
+            margin: 30px 0;
+            font-weight: bold;
+        }
+        
+        .faq {
+            margin: 30px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        .step {
+            flex-basis: 22%;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            background: #1a1a2e;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .benefit-card, .step {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O Algoritmo Milionário 2025</h1>
+        <p>ATENÇÃO: Este eBook Será BANIDO em 48h</p>
+        <a href="https://heldercarlos.gumroad.com/l/ffdlwv" class="cta-button">GARANTIR ACESSO AGORA</a>
+        <p>SAIBA MAIS</p>
+    </header>
+    
+    <div class="attention-banner">
+        ASSISTA ANTES QUE SEJA BANIDO - OFERTA POR TEMPO LIMITADO
+    </div>
+    
+    <section>
+        <h2>Descubra o Método que Está Transformando Vidas</h2>
+        <p>Você sabia que 92% dos brasileiros NÃO sabem usar IA para ganhar dinheiro?</p>
+        <p>Este eBook revela 3 métodos COMPROVADOS que funcionam em 2025</p>
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="https://via.placeholder.com/600x400?text=Homem+abrindo+envelope+com+cheque+de+R$100K" alt="Homem abrindo envelope com cheque de R$100K" style="max-width: 100%; border-radius: 10px;">
+            <p>Assista ao vídeo ao lado para ver como um homem abre envelope com cheque de R$100K e diz: "Isso veio do Método 3"</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Benefícios Exclusivos do Algoritmo Milionário</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <h3>Renda Passiva</h3>
+                <p>Ganhe R$5K-R$30K/mês sem aparecer na internet</p>
+                <p>Aprenda métodos discretos que geram renda sem exposição pessoal</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Ferramentas Gratuitas</h3>
+                <p>Ferramentas 100% GRÁTIS</p>
+                <p>Acesse todas as ferramentas de IA necessárias sem investimento inicial</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Tempo Flexível</h3>
+                <p>Apenas 2h/dia de trabalho</p>
+                <p>Organize sua rotina com nosso cronograma otimizado para resultados rápidos</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <h2>Resultados Reais de Pessoas Como Você</h2>
+        <div class="testimonial">
+            <p><strong>@CarlosRJ</strong></p>
+            <p>"Fiz R$8.750 em 17 dias!"</p>
+            <p>Carlos implementou o Método 2 e conseguiu resultados surpreendentes em menos de três semanas.</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>@AnaSP</strong></p>
+            <p>"Meu chefe não acredita que estou viajando e ganhando mais!"</p>
+            <p>Ana agora trabalha remotamente enquanto viaja e aumentou sua renda significativamente.</p>
+        </div>
+    </section>
+    
+    <section class="offer-box">
+        <h2>Oferta Especial por Tempo Limitado</h2>
+        <h3>O Algoritmo Milionário 2025</h3>
+        <p class="original-price">Preço Original: R$6297</p>
+        <p class="promo-price">Preço PROMOCIONAL: R$547</p>
+        <p class="timer">(após timer: R$197)</p>
+        <p>OFERTA EXPIRA EM BREVE! Não perca esta oportunidade única!</p>
+        
+        <div class="bonus">
+            <h3>BÔNUS EXCLUSIVO:</h3>
+            <p>"Lista de 100 Prompts para ChatGPT" (grátis hoje)</p>
+        </div>
+        
+        <a href="https://heldercarlos.gumroad.com/l/ffdlwv" class="cta-button">COMPRAR AGORA</a>
+    </section>
+    
+    <section class="guarantee">
+        <h2>Nossa Garantia Incondicional</h2>
+        <p>7 Dias de Garantia INCONDICIONAL</p>
+        <p>Se não amar, devolvo 200%!</p>
+        <p>Estamos tão confiantes nos resultados que você obterá que oferecemos uma garantia dupla do seu investimento.</p>
+    </section>
+    
+    <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <h3>Preciso de experiência?</h3>
+            <p>NÃO! Até meu avô de 68 anos fez R$3K!</p>
+            <p>O eBook foi desenvolvido para iniciantes absolutos, com instruções passo a passo que qualquer pessoa pode seguir.</p>
+        </div>
+        <div class="faq-item">
+            <h3>É ilegal?</h3>
+            <p>100% dentro da lei</p>
+            <p>Todos os métodos são éticos e legais. Dedicamos uma seção inteira para explicar os aspectos legais e como operar corretamente.</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Como Funciona o Algoritmo Milionário</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Acesse o eBook</h3>
+                <p>Faça o download imediato após a compra e comece a estudar os 3 métodos comprovados.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Implemente as Estratégias</h3>
+                <p>Siga o cronograma da página 22 e dedique apenas 2 horas por dia.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Utilize as Ferramentas Gratuítas</h3>
+                <p>Acesse todos os recursos listados na página 45 sem custo adicional.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Comece a Gerar Renda</h3>
+                <p>Veja os resultados aparecerem, como nossos casos de sucesso já comprovaram.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section style="text-align: center; margin: 50px 0;">
+        <h2>Não Perca Esta Oportunidade</h2>
+        <div class="attention-banner">
+            LEMBRE-SE: Este eBook Será BANIDO em 48h
+        </div>
+        <p>Preço PROMOCIONAL: R$547 (após timer: R$197)</p>
+        <p>Bônus GRÁTIS: "Lista de 100 Prompts para ChatGPT"</p>
+        <p>7 Dias de Garantia INCONDICIONAL - Se não amar, devolvo 200%!</p>
+        <a href="https://heldercarlos.gumroad.com/l/ffdlwv" class="cta-button">GARANTIR MEU ACESSO AGORA</a>
+        <div style="margin-top: 20px; font-weight: bold; color: #e63946;">
+            LIMITED TIME OFFER
+        </div>
+    </section>
+    
+    <footer>
+        <p>Made with GRANDAR</p>
+    </footer>
+</body>
+</html>
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             margin: 0;
